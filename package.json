@@ -1,0 +1,27 @@
+{
+  "name": "@werker/response-types",
+  "version": "1.0.0",
+  "description": "Helper functions to create Fetch API Response objects based on HTTP status codes",
+  "main": "index.js",
+  "files": [
+    "typings",
+    "src",
+    "*.js*",
+    "*.d.ts*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -f *.d.ts *.js *.js.map *.d.ts.map",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -d",
+    "prepack": "npm run clean && npm run build"
+  },
+  "author": "Florian Klampfer <mail@qwtel.com> (https://qwtel.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {}
+}
