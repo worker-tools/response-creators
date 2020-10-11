@@ -31,5 +31,13 @@
   "bugs": {
     "url": "https://github.com/worker-utils/response-creators/issues"
   },
-  "homepage": "https://github.com/worker-utils/response-creators#readme"
+  "homepage": "https://github.com/worker-utils/response-creators#readme",
+  "keywords": [
+    "workers",
+    "response",
+    "service-workers",
+    "fetch-api",
+    "http-status-codes",
+    "cloudflare-workers"
+  ]
 }
