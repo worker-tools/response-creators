@@ -1,5 +1,5 @@
 {
-  "name": "@werker/status-response",
+  "name": "@werker/response-creators",
   "version": "0.1.0",
   "description": "Helper functions to create Fetch API Response objects based on HTTP status codes",
   "main": "index.js",
@@ -26,10 +26,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/worker-utils/status-response.git"
+    "url": "git+https://github.com/worker-utils/response-creators.git"
   },
   "bugs": {
-    "url": "https://github.com/worker-utils/status-response/issues"
+    "url": "https://github.com/worker-utils/response-creators/issues"
   },
-  "homepage": "https://github.com/worker-utils/status-response#readme"
+  "homepage": "https://github.com/worker-utils/response-creators#readme"
 }
