@@ -1,6 +1,6 @@
 {
   "name": "@werker/status-response",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Helper functions to create Fetch API Response objects based on HTTP status codes",
   "main": "index.js",
   "files": [
