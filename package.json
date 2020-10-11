@@ -1,5 +1,5 @@
 {
-  "name": "@werker/response-types",
+  "name": "@werker/status-response",
   "version": "1.0.0",
   "description": "Helper functions to create Fetch API Response objects based on HTTP status codes",
   "main": "index.js",
@@ -23,5 +23,13 @@
   "devDependencies": {
     "typescript": "^4.0.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/worker-utils/status-response.git"
+  },
+  "bugs": {
+    "url": "https://github.com/worker-utils/status-response/issues"
+  },
+  "homepage": "https://github.com/worker-utils/status-response#readme"
 }
