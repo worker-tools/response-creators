@@ -16,6 +16,16 @@ const mkRedirect = (status: number, statusText: string) => (location: string | U
   ],
 }); 
 
+const mkUnauthorized = (status: number, statusText: string) => (realm: string = '', init: RequestInitExStatus = {}) => new Response(null, {
+  ...init,
+  status,
+  statusText,
+  headers: [
+    ...init?.headers ? Array.isArray(init.headers) ? init.headers : new Headers(init.headers) : [],
+    ['WWW-Authenticate', `Basic realm="${realm}", charset="UTF-8"`],
+  ],
+});
+
 const mkNotModified = (status: number, statusText: string) => (ifNoneMatch: string, ifModifiedSince: Date, init: RequestInitExStatus = {}) => new Response(null, {
   ...init,
   status,
@@ -47,7 +57,7 @@ export const temporaryRedirect = mkRedirect(307, 'Temporary Redirect');
 export const permanentRedirect = mkRedirect(308, 'Permanent Redirect');
 
 export const badRequest = mkResponse(400, 'Bad Request');
-export const unauthorized = mkResponse(401, 'Unauthorized');
+export const unauthorized = mkUnauthorized(401, 'Unauthorized');
 export const paymentRequired = mkResponse(402, 'Payment Required');
 export const forbidden = mkResponse(403, 'Forbidden');
 export const notFound = mkResponse(404, 'Not Found');
