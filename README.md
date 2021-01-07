@@ -22,7 +22,7 @@ However, some provide a slightly different interface for enhanced usability. E.g
 
 ```js
 event.respondWith(
-  seeOther(`/your-redirect-url`, { headers: {/* ... */} })
+  seeOther(`/your-redirect-url`)
 )
 ```
 
