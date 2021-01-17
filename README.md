@@ -28,7 +28,7 @@ event.respondWith(
 
 (This will set the `Location` header to `/your-redirect-url`).
 
-**NOTE**: When using JSON response bodies, consider combining it with [`worker-utils/json-fetch`](https://github.com/worker-utils/json-fetch) like so:
+**NOTE**: When using JSON response bodies, consider combining it with [`worker-tools/json-fetch`](https://github.com/worker-tools/json-fetch) like so:
 
 ```js
 event.respondWith(
