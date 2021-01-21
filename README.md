@@ -5,7 +5,7 @@ A collection of factory functions for [Fetch API](https://developer.mozilla.org/
 It is meant to be used in Service Workers and/or Cloudflare Workers.
 
 ```js
-import { ok } from '@werker/response-creators'
+import { ok } from '@worker-tools/response-creators'
 
 self.addEventListener('fetch', event => event.respondWith(ok()))
 ```

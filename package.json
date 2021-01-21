@@ -1,5 +1,5 @@
 {
-  "name": "@werker/response-creators",
+  "name": "@worker-tools/response-creators",
   "version": "1.0.5",
   "description": "Helper functions to create Fetch API Response objects based on HTTP status codes",
   "type": "module",
