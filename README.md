@@ -35,3 +35,5 @@ event.respondWith(
   new JSONResponse({ error: '...' }, badRequest())
 )
 ```
+
+Due to signature of the `Response` constructor, the opposite order (`badRequest(new JSONResponse({ error: '...' }))`) does not work!
