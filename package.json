@@ -1,6 +1,6 @@
 {
   "name": "@worker-tools/response-creators",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Helper functions to create Fetch API Response objects based on HTTP status codes",
   "type": "module",
   "main": "index.js",
@@ -29,7 +29,6 @@
   "devDependencies": {
     "typescript": "^4.0.3"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/worker-tools/response-creators.git"
