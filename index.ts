@@ -1,6 +1,6 @@
 export type RequestInitExStatus = Omit<RequestInit, 'status' | 'statusText'>;
 
-const mkResponse = (status: number, statusText: string) => (body: BodyInit = null, init: RequestInitExStatus = {}) => new Response(body, {
+const mkResponse = (status: number, statusText: string) => (body: BodyInit | null = null, init: RequestInitExStatus = {}) => new Response(body, {
   ...init,
   status,
   statusText,
@@ -16,7 +16,7 @@ const mkRedirect = (status: number, statusText: string) => (location: string | U
   ],
 }); 
 
-const mkUnauthorized = (status: number, statusText: string) => (realm: string = '', init: RequestInitExStatus = {}) => new Response(null, {
+const mkUnauthorized = (status: number, statusText: string) => (realm = '', init: RequestInitExStatus = {}) => new Response(null, {
   ...init,
   status,
   statusText,
