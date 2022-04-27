@@ -1,12 +1,12 @@
 export type RequestInitExStatus = Omit<RequestInit, 'status' | 'statusText'>;
 
-const mkResponse = (status: number, statusText: string) => (body: BodyInit | null = null, init: RequestInitExStatus = {}) => new Response(body, {
+const mkResponse = (status: number, statusText: string) => (body: BodyInit | null = null, init: RequestInitExStatus = {}): Response => new Response(body, {
   ...init,
   status,
   statusText,
 });
 
-const mkRedirect = (status: number, statusText: string) => (location: string | URL, init: RequestInitExStatus = {}) => new Response(null, {
+const mkRedirect = (status: number, statusText: string) => (location: string | URL, init: RequestInitExStatus = {}): Response => new Response(null, {
   ...init,
   status,
   statusText,
@@ -16,7 +16,7 @@ const mkRedirect = (status: number, statusText: string) => (location: string | U
   ],
 }); 
 
-const mkUnauthorized = (status: number, statusText: string) => (realm = '', init: RequestInitExStatus = {}) => new Response(null, {
+const mkUnauthorized = (status: number, statusText: string) => (realm = '', init: RequestInitExStatus = {}): Response => new Response(null, {
   ...init,
   status,
   statusText,
@@ -26,7 +26,7 @@ const mkUnauthorized = (status: number, statusText: string) => (realm = '', init
   ],
 });
 
-const mkNotModified = (status: number, statusText: string) => (ifNoneMatch: string, ifModifiedSince: Date, init: RequestInitExStatus = {}) => new Response(null, {
+const mkNotModified = (status: number, statusText: string) => (ifNoneMatch: string, ifModifiedSince: Date, init: RequestInitExStatus = {}): Response => new Response(null, {
   ...init,
   status,
   statusText,
